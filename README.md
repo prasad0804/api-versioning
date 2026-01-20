@@ -44,6 +44,15 @@ src/
 │       └── user.controller.js
 
 
+File	                                   Responsibility
+src/app.js	                             Application entry point and API version routing
+src/routes/v1/index.js	                Registers all version 1 routes
+src/routes/v1/user.routes.js	          User endpoints for API v1
+src/controllers/v1/user.controller.js   v1 user business logic
+src/routes/v2/index.js	                 Registers all version 2 routes
+src/routes/v2/user.routes.js	           User endpoints for API v2
+src/controllers/v2/user.controller.js	    v2 user business logic
+
 # STEP 1
 # app.js
 const express = require('express');
